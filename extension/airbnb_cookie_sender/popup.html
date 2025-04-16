@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Airbnb Message Replyer</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f9fafb;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 360px;
+      min-width: 140px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      color: #FF3D5F;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      width: 100%;
+      font-weight: bold;
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-size: 15px;
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+
+    button:active {
+      transform: scale(0.97);
+    }
+
+    .btn-start {
+      background-color: #FF3D5F;
+    }
+
+    .btn-start:hover {
+      background-color: #ff8398;
+    }
+
+    .btn-start:disabled,
+    .btn-stop:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+
+    .btn-stop {
+      background-color: #FF3D5F;
+    }
+
+    .btn-stop:hover {
+      background-color: #ff8398;
+    }
+
+    .status {
+      margin-top: 16px;
+      padding: 12px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      font-size: 14px;
+      color: #333;
+    }
+
+    footer {
+      margin-top: 32px;
+      font-size: 12px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Airbnb Auto Replyer</h1>
+
+    <button id="send" class="btn-start">▶ Start</button>
+    <button id="stop" class="btn-stop">■ Stop</button>
+
+    <div id="status" class="status">Ready to start</div>
+
+    <footer>© <span id="year"></span> Airbnb Auto Replyer</footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

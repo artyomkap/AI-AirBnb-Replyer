@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Airbnb Auto Replyer",
+    "version": "1.0",
+    "description": "Отправляет cookies Airbnb на сервер и запускает автоответчик",
+    "permissions": [
+        "cookies",
+        "debugger",
+        "scripting",
+        "tabs",
+        "activeTab"
+    ],
+    "host_permissions": [
+      "REDACTED/*",
+      "https://www.airbnb.com/*"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    }
+  }
+  
