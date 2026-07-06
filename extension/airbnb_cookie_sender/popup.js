@@ -3,7 +3,7 @@ const stopBtn = document.getElementById("stop");
 const status = document.getElementById("status");
 
 let isRunning = false;
-const API_URL = "";
+const API_URL = "http://localhost:8080";
 
 sendBtn.addEventListener("click", async () => {
   if (isRunning) return;
